@@ -7,14 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css">
     <!-- CDN FONTAWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>OhMyFood</title>
 </head>
 
@@ -25,7 +23,7 @@
         </div>
 
     </header>
-    <body>
+    <main>
         <section class="booking">
             <div class="booking__localisation">
                 <i class="fa-solid fa-location-dot"></i>
@@ -37,7 +35,76 @@
                 <a href="#" class="btn--gradient">Explorer nos restaurants</a>
             </div>
         </section>
-    </body>
+
+        <section class="fonctionnement">
+            <h2>Fonctionnement</h2>
+            <div class="fonctionnement__grid-container">
+                <div class="fonctionnement__grid-container__card">
+                    <p>1</p>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <p>Choisissez un restaurant</p>
+                </div>
+                <div class="fonctionnement__grid-container__card">
+                    <p>2</p>
+                    <i class="fa-solid fa-list"></i>
+                    <p>Composez votre menu</p>
+                </div>
+                <div class="fonctionnement__grid-container__card">
+                    <p>3</p>
+                    <i class="fa-solid fa-store"></i>
+                    <p>Dégustez au restaurant</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="restaurants">
+            <h2>Restaurants</h2>
+            <div class="restaurants__grid-container">
+                <div class="restaurants__grid-container__card restaurants__grid-container__card--new">
+                    <img src="./assets/images/restaurants/palette-du-gout.jpg" alt="restaurant la palette du goût">
+                    <div class="restaurants__grid-container__card__description">
+                        <h3>La palette du goût</h3>
+                        <p>Ménilmontant</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="restaurants__grid-container__card restaurants__grid-container__card--new">
+                    <img src="./assets/images/restaurants/note-enchantee.jpg" alt="restaurant la note enchantée">
+                    <div class="restaurants__grid-container__card__description">
+                        <h3>La note enchantée</h3>
+                        <p>Charonne</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="restaurants__grid-container__card">
+                    <img src="./assets/images/restaurants/la-francaise.jpg" alt="restaurant à la française">
+                    <div class="restaurants__grid-container__card__description">
+                        <h3>À la française</h3>
+                        <p>Cité Rouge</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="restaurants__grid-container__card">
+                    <img src="./assets/images/restaurants/delice-des-sens.jpg" alt="restaurant le délice des sens">
+                    <div class="restaurants__grid-container__card__description">
+                        <h3>Le délice des sens</h3>
+                        <p>Folie-Méricourt</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3>ohmyfood</h3>
+        <div class="grid__container">
+            <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
+            <a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
+            <a href="#">Mention légales</a>
+            <a href="#">Contact</a>
+        </div>
+    </footer>
 </body>
 
 </html>

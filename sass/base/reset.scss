@@ -32,8 +32,9 @@ a {
    */
   
   body {
-    margin: 0;
-  }
+    margin: auto;
+    max-width: 1500px;
+    }
   
   /**
    * Render the `main` element consistently in IE.

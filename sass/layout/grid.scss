@@ -1,0 +1,45 @@
+.fonctionnement {
+    &__grid-container {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 3fr;
+        grid-row-gap: 20px;
+
+        @media (min-width: 900px) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 20px;
+        }
+    }
+}
+
+.restaurants {
+    &__grid-container {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 4fr;
+        grid-row-gap: 20px;
+
+        @media (min-width: 900px) {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr;
+        }
+    }
+}
+
+footer {
+    .grid__container {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 4fr;
+        grid-row-gap: 5px;
+
+        @media (min-width: 800px) {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr;
+        }
+    }
+}

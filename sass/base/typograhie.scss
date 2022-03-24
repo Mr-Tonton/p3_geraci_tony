@@ -5,12 +5,36 @@
 
 body {
     font-family: "Roboto-medium", sans-serif;
+    letter-spacing: -1px;
+}
+
+a {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+::after {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
 }
 
 h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 26px;
+    font-weight: 800;
     padding-top: 25px;
     margin-top: 0;
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
     font-size: 25px;
+    font-weight: 600;
+    
+}
+
+h3 {
+    font-size: 18px;
     font-family: "Roboto", sans-serif;
 }
 
@@ -18,6 +42,19 @@ p {
     font-size: 18px;
 }
 
-a {
-    font-size: 18px;
+footer {
+    h3 {
+        font-family: "Shrikhand";
+        color: #fff;
+        font-weight: 100;
+    }
+    
+    a {
+        color: #fff;
+        font-size: 15px;
+
+        i {
+            font-size: 12px;
+        }
+    }
 }
