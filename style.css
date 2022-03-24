@@ -408,7 +408,7 @@ footer a i {
   font-family: "Shrikhand", sans-serif;
   font-weight: 400;
 }
-.menu__entrees h2 {
+.menu__entrees-plats-desserts h2 {
   font-weight: 400;
   font-size: 15px;
   color: #5a5a5a;
@@ -534,14 +534,14 @@ main {
   top: 30px;
   font-size: 22px;
 }
-.menu__entrees {
+.menu__entrees-plats-desserts {
   margin: 30px 0;
 }
-.menu__entrees h2 {
+.menu__entrees-plats-desserts h2 {
   position: relative;
   padding: 0 0 10px 10px;
 }
-.menu__entrees h2::after {
+.menu__entrees-plats-desserts h2::after {
   content: "";
   position: absolute;
   width: 35px;
