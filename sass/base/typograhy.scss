@@ -58,3 +58,43 @@ footer {
         }
     }
 }
+
+// Page : A la française
+
+.menu {
+    &__title {
+        h1 {
+            font-family: "Shrikhand", sans-serif;
+            font-weight: 400;
+        }
+    }
+
+    &__entrees {
+        h2 {
+            font-weight: 400;
+            font-size: 15px;
+            color: rgb(90, 90, 90);
+        }
+    }
+
+    .card {
+        &__left {
+            h3 {
+                font-weight: 500;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 300;
+                color: rgb(90, 90, 90);
+            }
+        }
+
+        &__right {
+            p {
+                font-size: 15px;
+                font-weight: 600;
+            }
+        }
+    }
+}

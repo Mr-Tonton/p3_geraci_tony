@@ -404,11 +404,49 @@ footer a i {
   font-size: 12px;
 }
 
+.menu__title h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 400;
+}
+.menu__entrees h2 {
+  font-weight: 400;
+  font-size: 15px;
+  color: #5a5a5a;
+}
+.menu .card__left h3 {
+  font-weight: 500;
+}
+.menu .card__left p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #5a5a5a;
+}
+.menu .card__right p {
+  font-size: 15px;
+  font-weight: 600;
+}
+
 .btn--gradient {
   color: white;
   background: linear-gradient(350deg, #9356dc 5%, #ff79da 100%);
   padding: 17px 24px;
   border-radius: 40px;
+}
+
+.card {
+  max-width: 700px;
+  margin: 10px 0;
+  background-color: #fff;
+  padding: 10px 15px 10px 10px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+@media (min-width: 600px) {
+  .card {
+    margin: 10px auto;
+  }
 }
 
 .fonctionnement__grid-container {
@@ -440,20 +478,6 @@ footer a i {
   }
 }
 
-footer .grid__container {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: 4fr;
-  grid-row-gap: 5px;
-}
-@media (min-width: 800px) {
-  footer .grid__container {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-  }
-}
-
 header {
   width: 100%;
   z-index: 100;
@@ -470,8 +494,68 @@ header {
   clip-path: inset(0px 0px -5px 1px);
 }
 .header__logo img {
-  padding-top: 10px;
+  padding-top: 5px;
   width: 165px;
+}
+.header__logo__go-back {
+  position: absolute;
+  padding-top: 5px;
+  left: 30px;
+}
+.header__logo__go-back i {
+  font-size: 23px;
+}
+
+main {
+  background-color: whitesmoke;
+}
+
+.menu-bg img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 400px;
+}
+
+.menu {
+  position: relative;
+  border-radius: 40px 40px 0 0;
+  padding: 0 10px 100px 15px;
+  background-color: whitesmoke;
+  top: -40px;
+  z-index: 100;
+}
+.menu__title {
+  position: relative;
+  padding-left: 10px;
+}
+.menu__title i {
+  position: absolute;
+  right: 10%;
+  top: 30px;
+  font-size: 22px;
+}
+.menu__entrees {
+  margin: 30px 0;
+}
+.menu__entrees h2 {
+  position: relative;
+  padding: 0 0 10px 10px;
+}
+.menu__entrees h2::after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 3px;
+  background-color: #99E2D0;
+  bottom: 5px;
+  left: 10px;
+}
+.menu .btn--gradient {
+  position: absolute;
+  left: 50%;
+  bottom: 35px;
+  transform: translateX(-50%);
+  padding: 13px 50px;
 }
 
 footer {
@@ -481,11 +565,26 @@ footer {
 footer h3 {
   padding: 0 0 20px 0;
 }
-footer a i {
-  padding-right: 8px;
+footer .footer__container {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
 }
-footer a:first-child i {
+footer .footer__container a {
+  padding-bottom: 8px;
+}
+footer .footer__container a i {
   padding-right: 13px;
+}
+footer .footer__container a:first-child i {
+  padding-right: 18px;
+}
+@media (min-width: 800px) {
+  footer .footer__container {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .booking__localisation {
@@ -519,6 +618,9 @@ footer a:first-child i {
 
 .fonctionnement {
   margin: 50px 10px;
+}
+.fonctionnement h2 {
+  padding-left: 10px;
 }
 .fonctionnement__grid-container {
   margin-top: 30px;

@@ -2,12 +2,14 @@
 
 
 @import "./base/reset.scss";
-@import "./base/typograhie.scss";
+@import "./base/typograhy.scss";
 
 @import "./components/buttons.scss";
+@import "./components/card.scss";
 
 @import "./layout/grid.scss";
 @import "./layout/header.scss";
+@import "./layout/carte.scss";
 @import "./layout/footer.scss";
 
 @import "./pages/index.scss";

@@ -6,12 +6,29 @@ footer {
         padding: 0 0 20px 0;
     }
 
-    a i {
-        padding-right: 8px;
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+
+        a {
+            padding-bottom: 8px;
+            i {
+                padding-right: 13px;
+            }
+        }
+        
+        a:first-child i {
+            padding-right: 18px;
+        }
+
+        @media (min-width: 800px) {
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-around;
+        }
     }
 
-    a:first-child i {
-        padding-right: 13px;
-    }
+
 
 }
