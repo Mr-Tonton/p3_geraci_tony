@@ -383,7 +383,6 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -410,14 +409,15 @@ footer a i {
 }
 .menu__entrees-plats-desserts h2 {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 17px;
   color: #5a5a5a;
 }
 .menu .card__left h3 {
+  font-size: 19px;
   font-weight: 500;
 }
 .menu .card__left p {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 300;
   color: #5a5a5a;
 }
@@ -432,16 +432,24 @@ footer a i {
   padding: 17px 24px;
   border-radius: 40px;
 }
+.btn--gradient:hover {
+  background: linear-gradient(170deg, #9356dc 5%, #ff79da 100%);
+  box-shadow: 0 0 5px black;
+  transition: 0.3s;
+}
 
 .card {
   max-width: 700px;
   margin: 10px 0;
   background-color: #fff;
-  padding: 10px 15px 10px 10px;
+  padding: 13px 25px 13px 12px;
   border-radius: 15px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+.card__left h3 {
+  padding-bottom: 5px;
 }
 @media (min-width: 600px) {
   .card {
@@ -505,6 +513,10 @@ header {
 .header__logo__go-back i {
   font-size: 23px;
 }
+.header__logo__go-back:hover {
+  transform: rotate(360deg);
+  transition: 0.3s;
+}
 
 main {
   background-color: whitesmoke;
@@ -513,7 +525,7 @@ main {
 .menu-bg img {
   width: 100%;
   object-fit: cover;
-  max-height: 400px;
+  max-height: 300px;
 }
 
 .menu {
@@ -617,10 +629,11 @@ footer .footer__container a:first-child i {
 }
 
 .fonctionnement {
-  margin: 50px 10px;
+  background-color: #fff;
+  padding: 60px 0;
 }
 .fonctionnement h2 {
-  padding-left: 10px;
+  padding-left: 15px;
 }
 .fonctionnement__grid-container {
   margin-top: 30px;
@@ -635,6 +648,13 @@ footer .footer__container a:first-child i {
   background-color: whitesmoke;
   border-radius: 20px;
   box-shadow: 0 0 20px #d2d2d2;
+}
+.fonctionnement__grid-container__card:hover {
+  background-color: #f2eafb;
+  transition: 0.3s;
+}
+.fonctionnement__grid-container__card:hover i {
+  color: #9356DC;
 }
 .fonctionnement__grid-container__card p:first-child {
   padding: 5px 10px;
@@ -677,6 +697,10 @@ footer .footer__container a:first-child i {
   background-color: #fff;
   box-shadow: 0 0 10px #c8c8c8;
 }
+.restaurants__grid-container__card:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
 .restaurants__grid-container__card img {
   width: 100%;
   height: 175px;
@@ -700,10 +724,10 @@ footer .footer__container a:first-child i {
   position: absolute;
   right: 15px;
   top: 15px;
-  padding: 6px 12px;
+  padding: 5px 14px;
   background-color: #99E2D0;
   color: #2c9c81;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */

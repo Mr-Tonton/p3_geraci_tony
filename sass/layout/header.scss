@@ -25,5 +25,10 @@ header {
         i {
             font-size: 23px;
         }
+
+        &:hover {
+            transform: rotate(360deg);
+            transition: .3s;
+        }
     }
 }

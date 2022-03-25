@@ -34,13 +34,19 @@
 }
 
 .fonctionnement {
+
+    background-color: #fff;
+    padding: 60px 0;
+    
     h2 {
-        padding-left: 10px;
+        padding-left: 15px;
     }
-    margin: 50px 10px;
+
     &__grid-container {
         margin-top: 30px;
         margin-left: 30px;
+
+
         &__card {
             position: relative;
             width: 98%;
@@ -50,6 +56,15 @@
             background-color: rgb(245, 245, 245);
             border-radius: 20px;
             box-shadow: 0 0 20px rgb(210, 210, 210);
+
+            &:hover {
+                background-color: lighten($primary-color, 35);
+                transition: .3s;
+
+                i {
+                    color: $primary-color;
+                }
+            }
 
             & p:first-child {
                 padding: 5px 10px;
@@ -98,6 +113,11 @@
             background-color: #fff;
             box-shadow: 0 0 10px rgb(200, 200, 200);
 
+            &:hover {
+                transform: scale(1.02);
+                transition: .3s;
+            }
+
             img {
                 width: 100%;
                 height: 175px;
@@ -125,10 +145,10 @@
                 position: absolute;
                 right: 15px;
                 top: 15px;
-                padding: 6px 12px;
+                padding: 5px 14px;
                 background-color: $tertiary-color;
                 color: darken($tertiary-color, 35%);
-                border-radius: 3px;
+                border-radius: 2px;
             }
         }
     }

@@ -3,4 +3,10 @@
     background: linear-gradient(350deg, rgba(147,86,220,1) 5%, rgba(255,121,218,1) 100%);
     padding: 17px 24px;
     border-radius: 40px;
+
+    &:hover {
+        background: linear-gradient(170deg, rgba(147,86,220,1) 5%, rgba(255,121,218,1) 100%);
+        box-shadow: 0 0 5px black;
+        transition: .3s;
+    }
 }

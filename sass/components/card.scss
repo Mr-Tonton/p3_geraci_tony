@@ -2,11 +2,17 @@
     max-width: 700px;
     margin: 10px 0;
     background-color: #fff;
-    padding: 10px 15px 10px 10px;
+    padding: 13px 25px 13px 12px;
     border-radius: 15px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+
+    &__left {
+        h3 {
+            padding-bottom: 5px;
+        }
+    }
 
     @media (min-width: 600px) {
         margin: 10px auto;
