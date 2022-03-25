@@ -32,8 +32,8 @@ a {
    */
   
   body {
-    margin: auto;
-    max-width: 1500px;
+    margin: 0;
+    padding: 0;
     }
   
   /**
@@ -42,6 +42,13 @@ a {
   
   main {
     display: block;
+  }
+
+  // Max width 1500px for all block (fix bug loader)
+  
+  main, header, footer, .carte {
+    max-width: 1500px;
+    margin: auto;
   }
   
   /**
