@@ -13,6 +13,11 @@ footer {
 
         a {
             padding-bottom: 8px;
+            &:hover {
+                text-shadow: 0 0 2px #fff;
+                transform: scale(1.05);
+                transition: .2s;
+            }
             i {
                 padding-right: 13px;
             }

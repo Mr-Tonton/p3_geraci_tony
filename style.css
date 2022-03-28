@@ -436,11 +436,12 @@ footer a i {
   background: linear-gradient(350deg, #9356dc 5%, #ff79da 100%);
   padding: 17px 24px;
   border-radius: 40px;
+  transition: all 0.3s;
 }
 .btn--gradient:hover {
-  background: linear-gradient(170deg, #9356dc 5%, #ff79da 100%);
-  box-shadow: 0 0 5px black;
-  transition: 0.3s;
+  background: linear-gradient(350deg, #ae80e5 3%, #ff88de 100%);
+  box-shadow: 0 0 10px black;
+  text-shadow: 0 0 2px white;
 }
 
 .card {
@@ -602,6 +603,11 @@ footer .footer__container {
 }
 footer .footer__container a {
   padding-bottom: 8px;
+}
+footer .footer__container a:hover {
+  text-shadow: 0 0 2px #fff;
+  transform: scale(1.05);
+  transition: 0.2s;
 }
 footer .footer__container a i {
   padding-right: 13px;
