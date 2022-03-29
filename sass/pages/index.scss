@@ -7,33 +7,32 @@
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    animation: transition 3s cubic-bezier(1,0,1,0) forwards;
+    animation: transition 3s .5s cubic-bezier(1,0,1,0) forwards;
     
     &__big-circle, &__middle-circle, &__little-circle {
         border-radius: 100%;
         border: 20px double transparent;
-        transform: rotate(0deg);
         animation: spin 1.3s;
         animation-iteration-count: infinite;
     }
 
     &__big-circle {
-        width: 140px;
-        height: 140px;
+        width: 120px;
+        height: 120px;
         border-right: 20px double purple;
         border-left: 20px double purple;
     }
     
     &__middle-circle {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         border-left: 20px double greenyellow;
         border-right: 20px double greenyellow;
     }
     
     &__little-circle {
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
         border-left: 20px double violet;
         border-right: 20px double violet;
     }
@@ -41,6 +40,10 @@
     /* animation */
     
     @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
         100% {
             transform: rotate(360deg);
         }
