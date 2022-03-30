@@ -14,7 +14,7 @@ main {
     position: relative;
     border-radius: 40px 40px 0 0;
     padding: 0 10px 100px 15px;
-    background-color: rgb(245, 245, 245);
+    background-color: $menu-color;
     top: -40px;
     z-index: 100;
 
@@ -70,7 +70,8 @@ main {
         left: 50%;
         bottom: 35px;
         transform: translateX(-50%);
-        padding: 13px 50px;
+        padding: 15px 50px;
+
     }
 }
 

@@ -1,3 +1,5 @@
+// BASE
+
 @font-face {
     font-family: "Shrikhand";
     src: url(./assets/fonts/Shrikhand/Shrikhand-Regular.ttf);
@@ -5,17 +7,11 @@
 
 body {
     font-family: "Roboto-medium", sans-serif;
-    letter-spacing: -1px;
 }
 
 a {
     font-size: 17px;
     font-weight: 500;
-}
-
-::after {
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
 }
 
 h1 {
@@ -29,12 +25,14 @@ h1 {
 h2 {
     font-family: "Roboto", sans-serif;
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 800;
     
 }
 
 h3 {
     font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
 }
 
 p {
@@ -58,6 +56,38 @@ footer {
     }
 }
 
+.btn--gradient {
+    text-shadow: 0 0 1px #fff;
+}
+
+// Pages : ACCUEIL
+
+.booking {
+    &__localisation {
+        color: $grey-color;
+        p {
+            font-weight: 600;
+            font-size: 17px;
+            letter-spacing: -1px;
+        }
+    }
+}
+
+.restaurants__grid-container__card {
+    
+    p {
+        font-size: 17px;
+    }
+    
+    &::after {
+        font-family: "Roboto", sans-serif;
+        color: darken($tertiary-color, 37%);
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+
+
 // Pages : RESTAURANTS
 
 .menu {
@@ -65,6 +95,7 @@ footer {
         h1 {
             font-family: "Shrikhand", sans-serif;
             font-weight: 400;
+            font-size: 28px;
         }
     }
 
@@ -72,21 +103,21 @@ footer {
         h2 {
             font-weight: 400;
             font-size: 17px;
-            color: rgb(90, 90, 90);
+            color: $grey-color;
         }
     }
 
     .card {
         &__left {
             h3 {
-                font-size: 19px;
-                font-weight: 500;
+                font-size: 17px;
+                font-weight: 600;
             }
 
             p {
                 font-size: 15px;
                 font-weight: 300;
-                color: rgb(90, 90, 90);
+                color: $grey-color;
             }
         }
 
@@ -94,6 +125,7 @@ footer {
             p {
                 font-size: 15px;
                 font-weight: 600;
+                color: darken($grey-color, 10%);
             }
         }
     }

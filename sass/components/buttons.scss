@@ -4,6 +4,7 @@
     padding: 17px 24px;
     border-radius: 40px;
     transition: all .3s;
+    
     &:hover {
         background: linear-gradient(350deg, lighten(rgba(147,86,220,1), 10%) 3%, lighten(rgba(255,121,218,1), 10%) 100%);
         box-shadow: 0 0 10px black;

@@ -1,83 +1,13 @@
-.loader-container {
-    position: fixed;
-    background-color: rgba(255, 255, 255, .8);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    animation: transition 3s .5s cubic-bezier(1,0,1,0) forwards;
-    
-    &__big-circle, &__middle-circle, &__little-circle {
-        border-radius: 100%;
-        border: 20px double transparent;
-        animation: spin 1.3s;
-        animation-iteration-count: infinite;
-    }
-
-    &__big-circle {
-        width: 120px;
-        height: 120px;
-        border-right: 20px double purple;
-        border-left: 20px double purple;
-    }
-    
-    &__middle-circle {
-        width: 80px;
-        height: 80px;
-        border-left: 20px double greenyellow;
-        border-right: 20px double greenyellow;
-    }
-    
-    &__little-circle {
-        width: 40px;
-        height: 40px;
-        border-left: 20px double violet;
-        border-right: 20px double violet;
-    }
- 
-    /* animation */
-    
-    @keyframes spin {
-        0% {
-            transform: rotate(0deg);
-        }
-
-        100% {
-            transform: rotate(360deg);
-        }
-    }
-    
-    @keyframes transition {
-        from {
-            opacity: 1;
-            visibility: 1;
-        }
-        to {
-            opacity: 0;
-            visibility: hidden;
-        }
-    }
-
-}
-
 .booking {
+    
     &__localisation {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
         width: 100%;
         height: 50px;
         background-color: rgb(233, 233, 233);
+        
         p {
-            font-weight: 600;
             margin-left: 15px;
-            color: rgb(90, 90, 90);
-        }
-    
-        i {
-            color: rgb(90, 90, 90);
         }
     }
     
@@ -85,6 +15,10 @@
         padding: 10px 20px 70px 20px;
         text-align: center;
         background-color: rgb(245, 245, 245);
+
+        h1 {
+            margin: 10px 20px;
+        }
     
         p {
             color: rgb(110, 110, 110);
@@ -98,7 +32,6 @@
 }
 
 .fonctionnement {
-
     background-color: #fff;
     padding: 60px 0;
     
@@ -109,50 +42,6 @@
     &__grid-container {
         margin-top: 30px;
         margin-left: 30px;
-
-
-        &__card {
-            position: relative;
-            width: 98%;
-            display: flex;
-            justify-content: flex-start;
-            padding: 25px 0 20px 0;
-            background-color: rgb(245, 245, 245);
-            border-radius: 20px;
-            box-shadow: 0 0 20px rgb(210, 210, 210);
-
-            &:hover {
-                background-color: lighten($primary-color, 35);
-                transition: .3s;
-
-                i {
-                    color: $primary-color;
-                }
-            }
-
-            & p:first-child {
-                padding: 5px 10px;
-                border-radius: 100%;
-                color: white;
-                font-size: 14px;
-                font-weight: 100;
-                background-color: $primary-color;
-                top: -2px;
-            }
-            
-            i {
-                padding: 0 30px 0 10px;
-                color: rgb(110, 110, 110);
-                font-size: 18px;
-            }
-
-            p {
-                position: relative;
-                font-weight: bold;
-                left: -10px;
-                font-size: 16px;
-            }
-        }
     }
 }
 
@@ -162,73 +51,10 @@
     width: 100%;
 
     h2 {
-        padding-left: 20px;
+        margin: 10px 0 0 20px;
     }
 
     &__grid-container {
         margin: 20px 0;
-        
-        &__card {
-            position: relative;
-            width: 88%;
-            margin: auto;
-            border-radius: 15px;
-            height: 250px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgb(200, 200, 200);
-
-            &:hover {
-                transform: scale(1.02);
-                transition: .3s;
-            }
-
-            img {
-                width: 100%;
-                height: 175px;
-                border-radius: 15px 15px 0 0;
-                object-fit: cover;
-            }
-
-            h3 {
-                padding: 10px 0 5px 10px;
-            }
-
-            p {
-                padding-left: 10px;
-            }
-
-            .fa-heart {
-                width: 26px;
-                position: absolute;
-                right: 25px;
-                bottom: 25px;
-                font-size: 25px;
-            }
-
-            .fa-solid {
-                opacity: 0;
-                color: transparent;
-                background-clip: text;
-                -webkit-background-clip: text;
-                background-image: linear-gradient(200deg, rgba(147,86,220,1) 5%, rgba(255,121,218,1) 100%);
-                transition: all .2s ease-in-out;
-            }
-
-            .fa-solid:hover {
-                opacity: 1;
-                transform: scale(1.1);
-            }
-
-            &--new::after {
-                content: "Nouveau";
-                position: absolute;
-                right: 15px;
-                top: 15px;
-                padding: 5px 14px;
-                background-color: $tertiary-color;
-                color: darken($tertiary-color, 35%);
-                border-radius: 2px;
-            }
-        }
     }
 }

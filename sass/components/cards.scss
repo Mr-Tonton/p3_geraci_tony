@@ -1,0 +1,259 @@
+// Fonctionnement card
+
+.fonctionnement {
+    &__grid-container {
+        
+        &__card {
+            position: relative;
+            width: 98%;
+            display: flex;
+            justify-content: flex-start;
+            padding: 25px 0 20px 0;
+            background-color: rgb(245, 245, 245);
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgb(210, 210, 210);
+
+            &:hover {
+                background-color: lighten($primary-color, 35);
+                transition: .3s;
+
+                i {
+                    color: $primary-color;
+                }
+            }
+
+            & p:first-child {
+                padding: 5px 10px;
+                border-radius: 100%;
+                color: white;
+                font-size: 14px;
+                font-weight: 100;
+                background-color: $primary-color;
+                top: -2px;
+            }
+            
+            i {
+                padding: 0 30px 0 10px;
+                color: rgb(110, 110, 110);
+                font-size: 18px;
+            }
+
+            p {
+                position: relative;
+                font-weight: bold;
+                left: -10px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+
+// Restaurant card
+
+.restaurants {
+    &__grid-container {
+        
+        &__card {
+            position: relative;
+            width: 88%;
+            margin: auto;
+            border-radius: 15px;
+            height: 250px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgb(200, 200, 200);
+
+            &:hover {
+                transform: scale(1.02);
+                transition: .3s ease-in-out;
+                box-shadow: 0 0 5px $grey-color;
+            }
+
+            img {
+                width: 100%;
+                height: 175px;
+                border-radius: 15px 15px 0 0;
+                object-fit: cover;
+            }
+
+            h3 {
+                padding: 10px 0 5px 10px;
+            }
+
+            p {
+                padding-left: 10px;
+            }
+
+            .fa-heart {
+                width: 26px;
+                position: absolute;
+                right: 25px;
+                bottom: 25px;
+                font-size: 25px;
+            }
+
+            .fa-solid {
+                opacity: 0;
+                color: transparent;
+                background-clip: text;
+                -webkit-background-clip: text;
+                background-image: linear-gradient(200deg, rgba(147,86,220,1) 5%, rgba(255,121,218,1) 100%);
+                transition: all .2s ease-in-out;
+            }
+
+            .fa-solid:hover {
+                opacity: 1;
+                transform: scale(1.1);
+            }
+
+            &--new::after {
+                content: "Nouveau";
+                position: absolute;
+                right: 15px;
+                top: 15px;
+                padding: 7px 14px 4px;
+                background-color: $tertiary-color;
+                border-radius: 2px;
+            }
+        }
+    }
+}
+
+
+// menu card
+
+.menu__entrees-plats-desserts {
+    
+    .card {
+        max-width: 700px;
+        width: 100%;
+        margin: 10px 0;
+        background-color: #fff;
+        height: 65px;
+        border-radius: 13px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+        box-shadow: 0 0 10px lighten($grey-color, 55%);
+        cursor: pointer;
+    
+        &:nth-of-type(1) {
+            @include menu-animation;
+            animation-delay: .5s;
+            opacity: 1;
+        }
+        &:nth-of-type(2) {
+            @include menu-animation;
+            animation-delay: .7s;
+            opacity: 1;
+        }
+        &:nth-of-type(3) {
+            @include menu-animation;
+            animation-delay: .9s;
+            opacity: 1;
+        }
+        &:nth-of-type(4) {
+            @include menu-animation;
+            animation-delay: 1.1s;
+            opacity: 1;
+        }
+    
+        &__left {
+            padding-left: 10px;
+            overflow:hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+    
+            h3, p {
+                overflow:hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+    
+            h3 {
+                margin-bottom: 3px;
+            }
+        }
+    
+        &__right {
+            height: 100%;
+            display: flex;
+    
+            &__price {
+                display: flex;
+                align-items: flex-end;
+                margin: 0 20px 10px 0;
+            }
+    
+            &__check {
+                @include flex-center;
+                background-color: $tertiary-color;
+                width: 60px;
+                border-radius: 0 13px 13px 0;
+                margin-right: -60px;
+                transition: .3s;
+    
+                i {
+                    color: $tertiary-color;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    padding: 2px 4px;
+                    font-size: 15px;
+                }
+            }
+        }
+    
+        &:hover {
+            box-shadow: 0 0 15px lighten($grey-color, 40%);
+            transition: .3s ease-in-out;
+    
+            .card__right__check {
+                margin-right: 0;
+                animation: check-move .5s ease-in-out;
+        
+                i {
+                    animation: check-rotate .5s ease-in-out;
+                }
+            }
+        }
+    
+        @media (min-width: 600px) {
+            margin: 10px auto;
+        }
+    }
+}
+
+// animation
+
+@keyframes menu-effect {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    90% {
+        opacity: .8;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes check-move {
+    from {
+        margin-right: -60px;
+    }
+
+    to {
+        margin-right: 0;
+    }
+}
+
+@keyframes check-rotate {
+    to {
+        transform: rotate(1turn);
+    }
+}
