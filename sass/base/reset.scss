@@ -46,8 +46,13 @@ a {
 
   // Max width 1500px for all block (fix bug loader)
   
-  main, header, footer, .carte {
+.restaurants, .carte {
     max-width: 1500px;
+    margin: auto;
+  }
+
+  .fonctionnement__grid-container {
+    max-width: 1450px;
     margin: auto;
   }
   

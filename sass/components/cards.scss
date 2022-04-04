@@ -85,25 +85,8 @@
             }
 
             .fa-heart {
-                width: 26px;
-                position: absolute;
                 right: 25px;
                 bottom: 25px;
-                font-size: 25px;
-            }
-
-            .fa-solid {
-                opacity: 0;
-                color: transparent;
-                background-clip: text;
-                -webkit-background-clip: text;
-                background-image: linear-gradient(200deg, rgba(147,86,220,1) 5%, rgba(255,121,218,1) 100%);
-                transition: all .2s ease-in-out;
-            }
-
-            .fa-solid:hover {
-                opacity: 1;
-                transform: scale(1.1);
             }
 
             &--new::after {

@@ -1,10 +1,5 @@
 // BASE
 
-@font-face {
-    font-family: "Shrikhand";
-    src: url(./assets/fonts/Shrikhand/Shrikhand-Regular.ttf);
-}
-
 body {
     font-family: "Roboto-medium", sans-serif;
 }
@@ -41,7 +36,7 @@ p {
 
 footer {
     h3 {
-        font-family: "Shrikhand";
+        font-family: "Shrikhand", sans-serif;
         color: #fff;
         font-weight: 100;
     }
