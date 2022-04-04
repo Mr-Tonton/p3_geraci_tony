@@ -44,9 +44,9 @@ a {
     display: block;
   }
 
-  // Max width 1500px for all block (fix bug loader)
+  // Max width 1500px/1450px for some blocs.
   
-.restaurants, .carte {
+.restaurants, .carte, .footer__container {
     max-width: 1500px;
     margin: auto;
   }
