@@ -4,13 +4,22 @@ footer {
 
     h3 {
         padding: 0 0 20px 0;
+
+        @media (min-width: 800px) {
+            padding: 0;
+        }
+    }
+
+    @media (min-width: 800px) {
+        display: flex;
+        align-items: center;
+        height: 100px;
     }
 
     .footer__container {
         display: flex;
         flex-direction: column;
-        width: 200px;
-
+        align-items: baseline;
         a {
             padding-bottom: 8px;
             

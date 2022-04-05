@@ -21,13 +21,11 @@ main {
     &__title {
         max-width: 1500px;
         margin: auto;
-        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding-left: 10px;
 
-        .fa-heart {
-            right: 5%;
-            top: 30px;
-        }
     }
 
     &__entrees-plats-desserts {

@@ -1,19 +1,25 @@
-.fa-heart {
-    width: 25px;
-    position: absolute;
-    font-size: 22px;
-}
-
-.fa-solid.fa-heart {
-    opacity: 0;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(200deg, rgba(147,86,220,1) 5%, rgba(255,121,218,1) 100%);
-    transition: all .2s ease-in-out;
-}
-
-.fa-solid.fa-heart:hover {
-    opacity: 1;
-    transform: scale(1.05);
+.heart-container {
+    margin: 0 20px;
+    position: relative;
+    
+    .fa-heart {
+        width: 25px;
+        font-size: 22px;
+    }
+    
+    .fa-solid.fa-heart {
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(200deg, rgba(147,86,220,1) 5%, rgba(255,121,218,1) 100%);
+        transition: all .2s ease-in-out;
+    }
+    
+    .fa-solid.fa-heart:hover {
+        opacity: 1;
+        transform: scale(1.05);
+    }
 }

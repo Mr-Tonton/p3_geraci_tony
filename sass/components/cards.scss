@@ -1,6 +1,6 @@
-// Fonctionnement card
+// Functioning card
 
-.fonctionnement {
+.functioning {
     &__grid-container {
         
         &__card {
@@ -11,7 +11,7 @@
             padding: 25px 0 20px 0;
             background-color: rgb(245, 245, 245);
             border-radius: 20px;
-            box-shadow: 0 0 20px rgb(210, 210, 210);
+            box-shadow: $box-shadow-card;
 
             &:hover {
                 background-color: lighten($primary-color, 35);
@@ -22,17 +22,19 @@
                 }
             }
 
-            & p:first-child {
-                padding: 5px 10px;
+            & i:first-child {
+                position: relative;
+                padding: 3px 8px;
                 border-radius: 100%;
                 color: white;
                 font-size: 14px;
                 font-weight: 100;
                 background-color: $primary-color;
+                left: -10px;
                 top: -2px;
             }
             
-            i {
+            .fa-solid {
                 padding: 0 30px 0 10px;
                 color: rgb(110, 110, 110);
                 font-size: 18px;
@@ -61,12 +63,11 @@
             border-radius: 15px;
             height: 250px;
             background-color: #fff;
-            box-shadow: 0 0 10px rgb(200, 200, 200);
+            box-shadow: $box-shadow-card;
 
             &:hover {
                 transform: scale(1.02);
                 transition: .3s ease-in-out;
-                box-shadow: 0 0 5px $grey-color;
             }
 
             img {
@@ -75,18 +76,17 @@
                 border-radius: 15px 15px 0 0;
                 object-fit: cover;
             }
-
+            &__description {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
             h3 {
                 padding: 10px 0 5px 10px;
             }
 
             p {
                 padding-left: 10px;
-            }
-
-            .fa-heart {
-                right: 25px;
-                bottom: 25px;
             }
 
             &--new::after {
@@ -110,7 +110,7 @@
     .card {
         max-width: 700px;
         width: 100%;
-        margin: 10px 0;
+        margin: 12px 0;
         background-color: #fff;
         height: 65px;
         border-radius: 13px;
@@ -118,7 +118,7 @@
         justify-content: space-between;
         align-items: center;
         overflow: hidden;
-        box-shadow: 0 0 10px lighten($grey-color, 55%);
+        box-shadow: $box-shadow-card;
         cursor: pointer;
     
         &:nth-of-type(1) {
@@ -188,7 +188,6 @@
         }
     
         &:hover {
-            box-shadow: 0 0 15px lighten($grey-color, 40%);
             transition: .3s ease-in-out;
     
             .card__right__check {

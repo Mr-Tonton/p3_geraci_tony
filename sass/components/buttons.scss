@@ -7,7 +7,7 @@
     
     &:hover {
         background: linear-gradient(350deg, lighten(rgba(147,86,220,1), 10%) 3%, lighten(rgba(255,121,218,1), 10%) 100%);
-        box-shadow: 0 0 10px black;
+        box-shadow: $box-shadow-btn;
         text-shadow: 0 0 2px white;
     }
 }
