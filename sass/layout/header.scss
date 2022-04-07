@@ -30,5 +30,11 @@ header {
             transform: rotate(1turn);
             transition: .4s ease-in-out;
         }
+
+        @media (min-width: 950px) {
+            position: relative;
+            left: -350px;
+
+        }
     }
 }
