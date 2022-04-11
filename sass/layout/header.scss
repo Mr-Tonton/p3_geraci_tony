@@ -2,6 +2,11 @@ header {
     width: 100%;
     z-index: 100;
     position: relative;
+
+    &:hover .header__logo__go-back {
+        transform: rotate(1turn);
+        transition: .4s ease-in-out;
+    }
 }
 
 .header__logo {
@@ -24,11 +29,6 @@ header {
         i {
             font-size: 20px;
             text-shadow: 0 0 1px black;
-        }
-
-        &:hover {
-            transform: rotate(1turn);
-            transition: .4s ease-in-out;
         }
 
         @media (min-width: 950px) {
