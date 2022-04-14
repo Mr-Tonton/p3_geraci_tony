@@ -52,7 +52,7 @@
 @keyframes transition {
     from {
         opacity: 1;
-        visibility: 1;
+        visibility: visible;
     }
     to {
         opacity: 0;

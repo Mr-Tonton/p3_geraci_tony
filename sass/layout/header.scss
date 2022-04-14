@@ -1,40 +1,38 @@
 header {
     width: 100%;
     z-index: 100;
-    position: relative;
 
-    &:hover .header__logo__go-back {
+    &:hover .header__logo__go-back i {
         transform: rotate(1turn);
         transition: .4s ease-in-out;
     }
 }
 
 .header__logo {
-    @include flex-center;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    max-width: 1200px;
     height: 65px;
+    margin: 0 auto;
     box-shadow: 0 0 5px rgb(168, 167, 167);
     clip-path: inset(0px 0px -5px 1px);
     
     img {
+        grid-column-start: 2;
         padding-top: 5px;
         width: 165px;
     }
 
     &__go-back {
-        position: absolute;
         padding-top: 5px;
-        left: 30px;
 
         i {
             font-size: 20px;
             text-shadow: 0 0 1px black;
-        }
-
-        @media (min-width: 950px) {
-            position: relative;
-            left: -350px;
-
+            margin-left: 20px;
         }
     }
 }
