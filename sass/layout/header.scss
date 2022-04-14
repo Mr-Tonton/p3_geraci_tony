@@ -9,10 +9,6 @@ header {
 }
 
 .header__logo {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     max-width: 1200px;
     height: 65px;
@@ -21,7 +17,6 @@ header {
     clip-path: inset(0px 0px -5px 1px);
     
     img {
-        grid-column-start: 2;
         padding-top: 5px;
         width: 165px;
     }
